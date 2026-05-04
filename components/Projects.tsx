@@ -98,7 +98,6 @@ function ProjectFeature({
       <div className={`sm:col-span-5 ${imageRight ? "sm:order-1" : ""}`}>
         <div className="flex items-baseline gap-3 mb-2">
           <span className="font-mono text-[11px] text-[#565658]">0{index + 1}</span>
-          <span className="font-mono text-[11px] text-[#7a7a7a]">{project.year}</span>
           {project.award && (
             <span className="font-mono text-[10px] text-[#e8a87c] uppercase tracking-widest">
               ★ {project.award}
