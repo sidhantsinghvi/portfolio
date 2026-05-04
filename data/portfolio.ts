@@ -34,7 +34,7 @@ export const EXPERIENCES = [
   {
     id: "e4e",
     company: "Engineers for Exploration",
-    role: "Undergraduate Researcher–Embedded Firmware & Systems",
+    role: "Undergraduate Researcher, Firmware & Systems",
     period: "Sep 2025–Present",
     location: "San Diego",
     summary:
@@ -234,19 +234,19 @@ export const PROJECTS = [
     tags: ["verification", "RTL", "low-power"],
   },
   {
-    id: "nachos",
-    name: "Nachos OS",
-    sub: "Threading, syscalls, virtual memory",
+    id: "vending",
+    name: "Vending Machine FSM",
+    sub: "Mealy state machine and Booth's multiplier in Digital",
     year: "2024",
     image: null,
     imageMock: "nachos",
-    github: null,
+    github: "https://github.com/sidhantsinghvi/Sequential-Circuit-Design-vending-machine",
     span: "small",
     body:
-      "Implemented OS fundamentals–fork/join, futures, syscalls, page allocation, multiprogramming–in Java on top of the Nachos framework. Useful background for thinking about real-time pipelines later.",
-    pipeline: ["User prog", "Syscall", "Scheduler", "Page table"],
-    metrics: [{ label: "Lang", value: "Java" }],
-    tags: ["systems", "concurrency"],
+      "Sequential circuit design: Mealy state machine for a vending machine controller, optimised Booth's multiplier with hardwired controller to cut clock cycles, and a minimised pattern-recognition Mealy machine. All implemented and verified in the Digital simulation tool.",
+    pipeline: ["State encoding", "Next-state logic", "Output logic", "Simulation"],
+    metrics: [{ label: "Tool", value: "Digital" }, { label: "Method", value: "Mealy FSM" }],
+    tags: ["digital design", "FSM", "sequential circuits"],
   },
   {
     id: "cuda",
