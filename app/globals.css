@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0c0c0e;
+  --bg-2: #131317;
+  --paper: #ededec;
+  --muted: #8a8a8a;
+  --dim: #565658;
+  --rule: rgba(255, 255, 255, 0.07);
+  --amber: #e8a87c;
+  --amber-soft: #f5b890;
+  --ink: #1a1a1c;
+  --link: #93b8d4;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg);
+  color: var(--paper);
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.005em;
+}
+
+.font-serif { font-family: "Instrument Serif", "Times New Roman", serif; font-feature-settings: "liga"; letter-spacing: -0.015em; }
+.font-mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: rgba(232, 168, 124, 0.18); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(232, 168, 124, 0.35); }
+
+::selection { background: rgba(232, 168, 124, 0.25); color: var(--paper); }
+
+/* Editorial rule */
+.rule { border-color: var(--rule); }
+
+/* Annotation arrow */
+.annot {
+  font-family: "Instrument Serif", serif;
+  font-style: italic;
+  color: var(--amber);
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+/* Number marker — Swiss style */
+.marker {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+/* Project image hover */
+.project-image {
+  filter: grayscale(0.15) brightness(0.92);
+  transition: filter 0.5s ease;
+}
+.project-image:hover {
+  filter: grayscale(0) brightness(1);
+}
+
+/* Schematic line drawing */
+.schematic-line {
+  stroke: rgba(232, 168, 124, 0.4);
+  stroke-width: 1;
+  fill: none;
+}
+
+/* Cursor blink for one specific element */
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+.cursor-blink { animation: blink 1.1s steps(1) infinite; }
+
+/* Soft fade-in for sections */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Underline for inline links — subtle */
+a.underline-soft {
+  text-decoration: underline;
+  text-decoration-color: rgba(232, 168, 124, 0.4);
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 0.2s;
+}
+a.underline-soft:hover {
+  text-decoration-color: rgba(232, 168, 124, 0.9);
+}
+
+/* Tiny dotted divider */
+.dotted-rule {
+  border-top: 1px dotted var(--rule);
+}
