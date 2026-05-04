@@ -39,10 +39,7 @@ export default function Contact() {
         {/* Footer */}
         <div className="mt-24 pt-6 border-t border-white/[0.05] flex flex-col sm:flex-row items-baseline justify-between gap-2 text-[11px] font-mono text-[#565658]">
           <span>
-            Sidhant Singhvi · San Diego · MMXXV
-          </span>
-          <span>
-            built by hand · Next.js + Tailwind
+            Sidhant Singhvi · San Diego
           </span>
         </div>
       </div>
