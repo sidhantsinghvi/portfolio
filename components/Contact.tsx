@@ -22,7 +22,7 @@ export default function Contact() {
 
             <p className="text-[15px] text-[#bdbdbd] leading-relaxed max-w-lg mb-10">
               I'm looking for early-stage startup roles where the inputs are physical and the
-              output has to feel instant. Embedded, firmware, AI pipelines, or all three.
+              output has to feel instant. AI pipelines, real-time systems, or the product that wraps them.
               Email is the fastest way to reach me.
             </p>
 
