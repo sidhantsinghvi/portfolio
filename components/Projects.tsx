@@ -42,9 +42,9 @@ export default function Projects() {
             {more.map((p, i) => (
               <motion.a
                 key={p.id}
-                href={p.github ?? "#"}
+                href={p.github ?? undefined}
                 target={p.github ? "_blank" : undefined}
-                rel="noopener noreferrer"
+                rel={p.github ? "noopener noreferrer" : undefined}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}

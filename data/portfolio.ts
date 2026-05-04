@@ -253,9 +253,9 @@ export const PROJECTS = [
     name: "CUDA N-Body",
     sub: "GPU-accelerated gravitational sim",
     year: "2024",
-    image: null,
-    imageMock: "cuda",
-    github: null,
+    image: "/projects/cuda-nbody.png",
+    imageAlt: "CUDA N-Body gravitational simulation screenshot",
+    github: "https://github.com/sidhantsinghvi/cuda-nbody",
     span: "small",
     body:
       "Gravitational N-body sim on CPU vs. GPU. Memory coalescing and thread block sizing made the difference between a 2× and a 30× speedup.",
