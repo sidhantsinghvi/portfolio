@@ -40,9 +40,9 @@ export const EXPERIENCES = [
     summary:
       "Field-deployed telemetry for wildlife tracking–low-power radio telemetry drones that wake up, read sensors, talk to a base station, and survive weeks in the field.",
     bullets: [
-      "Writing always-on firmware with aggressive sleep/wake cycles to hit multi-week battery life without dropping sensor coverage.",
-      "Built sensor polling and RF data pipelines over I²C, UART, and GPIO; interrupt-driven design keeps latency deterministic.",
-      "Designed state machines for reliable field operation: graceful sensor dropout, reconnect logic, and power-fault recovery.",
+      "Built real-time sensor data pipelines: ingesting, filtering, and packaging telemetry for reliable wireless transmission.",
+      "Wrote control software with event-driven state machines handling sensor dropouts, reconnects, and edge-case recovery.",
+      "Optimized the software stack for always-on operation: duty cycling, buffering strategies, and low-overhead logging.",
     ],
   },
   {
