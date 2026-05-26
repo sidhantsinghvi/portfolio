@@ -107,8 +107,8 @@ export const PROJECTS = [
     name: "Zaudit",
     sub: "AI-powered accounting assistant",
     year: "2025",
-    image: null,
-    imageMock: "zaudit",
+    image: "/projects/zaudit-dashboard.png",
+    imageAlt: "Zaudit AI accounting dashboard with chat assistant",
     github: "https://zaudit.co",
     span: "wide",
     body:
