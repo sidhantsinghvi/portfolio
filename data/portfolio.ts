@@ -109,7 +109,7 @@ export const PROJECTS = [
     year: "2025",
     image: null,
     imageMock: "zaudit",
-    github: "https://github.com/sidhantsinghvi/zaudit-web",
+    github: "https://zaudit.co",
     span: "wide",
     body:
       "AI accounting assistant built on MCP: natural-language queries for bookkeeping, model tools that automate data lookup and categorization, and backend pipelines that prepare, validate, and route financial data for reliable AI-assisted accounting.",
