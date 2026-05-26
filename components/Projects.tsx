@@ -200,6 +200,7 @@ function ProjectMock({
         }}
       />
 
+      {kind === "zaudit" && <ZauditMock />}
       {kind === "rehab" && <RehabMock />}
       {kind === "tinyml" && <TinyMLMock />}
       {kind === "insect" && <InsectMock />}
@@ -214,6 +215,40 @@ function ProjectMock({
         </p>
       </div>
     </div>
+  );
+}
+
+function ZauditMock() {
+  const messages = [
+    { role: "user", text: "What did we spend on SaaS last quarter?" },
+    { role: "ai",   text: "Fetching transactions... $24,310 across 12 vendors." },
+    { role: "user", text: "Flag anything over $2k recurring." },
+    { role: "ai",   text: "3 flagged: Salesforce $4.2k, AWS $3.8k, Notion $2.1k" },
+  ];
+  return (
+    <svg viewBox="0 0 400 300" className="w-full h-full p-6">
+      <text x="0" y="16" fontFamily="JetBrains Mono" fontSize="9" fill="#7a7a7a" letterSpacing="1">ZAUDIT · AI ACCOUNTING</text>
+      {messages.map((m, i) => {
+        const isUser = m.role === "user";
+        const y = 36 + i * 58;
+        const rectX = isUser ? 180 : 0;
+        const rectW = isUser ? 210 : 230;
+        return (
+          <g key={i}>
+            <rect x={rectX} y={y} width={rectW} height={36} rx="4"
+              fill={isUser ? "rgba(232,168,124,0.12)" : "rgba(255,255,255,0.05)"}
+              stroke={isUser ? "rgba(232,168,124,0.3)" : "rgba(255,255,255,0.08)"} strokeWidth="0.8" />
+            <text x={rectX + 8} y={y + 13} fontFamily="JetBrains Mono" fontSize="7"
+              fill={isUser ? "#e8a87c" : "#565658"}>{isUser ? "you" : "ai"}</text>
+            <foreignObject x={rectX + 8} y={y + 18} width={rectW - 16} height={20}>
+              <text fontFamily="JetBrains Mono" fontSize="8" fill="#bdbdbd">{m.text}</text>
+            </foreignObject>
+            <text x={rectX + 8} y={y + 28} fontFamily="JetBrains Mono" fontSize="8" fill="#bdbdbd">{m.text.slice(0, 36)}</text>
+          </g>
+        );
+      })}
+      <text x="200" y="275" fontFamily="JetBrains Mono" fontSize="10" fill="#bdbdbd" textAnchor="middle">natural language · MCP · agentic bookkeeping</text>
+    </svg>
   );
 }
 

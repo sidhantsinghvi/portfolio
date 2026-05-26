@@ -18,6 +18,20 @@ export const BIO_LINES = [
 
 export const EXPERIENCES = [
   {
+    id: "neuralx",
+    company: "NeuralX",
+    role: "Co-Founder",
+    period: "Mar 2026–Present",
+    location: "San Diego",
+    summary:
+      "Agentic platform letting companies train and deploy task-specific AI models without internal ML teams. Interviewed with Y Combinator for S26.",
+    bullets: [
+      "Built an agentic pipeline for companies to train and deploy task-specific AI models, cutting out the need for in-house ML teams.",
+      "Architected model serving infrastructure that brings inference costs 70–90% below frontier model pricing.",
+      "Ran customer discovery across 4000+ potential users to validate market demand before building.",
+    ],
+  },
+  {
     id: "brg",
     company: "BRG Energies",
     role: "Systems Engineering Intern",
@@ -88,6 +102,24 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    id: "zaudit",
+    name: "Zaudit",
+    sub: "AI-powered accounting assistant",
+    year: "2025",
+    image: null,
+    imageMock: "zaudit",
+    github: null,
+    span: "wide",
+    body:
+      "AI accounting assistant built on MCP: natural-language queries for bookkeeping, model tools that automate data lookup and categorization, and backend pipelines that prepare, validate, and route financial data for reliable AI-assisted accounting.",
+    pipeline: ["User query", "MCP tool router", "Data pipeline", "AI response"],
+    metrics: [
+      { label: "Interface", value: "natural language" },
+      { label: "Protocol", value: "MCP" },
+    ],
+    tags: ["agentic AI", "MCP", "product"],
+  },
   {
     id: "eyespy",
     name: "EyeSpy",
