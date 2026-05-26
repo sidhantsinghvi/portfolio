@@ -31,7 +31,6 @@ export default function Contact() {
               <ContactRow label="Email" value={META.email} href={`mailto:${META.email}`} />
               <ContactRow label="GitHub" value="sidhantsinghvi" href={META.github} external />
               <ContactRow label="LinkedIn" value="sidhantsinghvi" href={META.linkedin} external />
-              <ContactRow label="Resume" value="resume.pdf" href={META.resume} external />
             </div>
           </div>
         </div>

@@ -47,14 +47,6 @@ export default function Nav() {
           ))}
         </nav>
 
-        <a
-          href={META.resume}
-          className="text-[13px] text-[#ededec] hover:text-[#e8a87c] transition-colors underline-soft"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Resume
-        </a>
       </div>
     </motion.header>
   );
