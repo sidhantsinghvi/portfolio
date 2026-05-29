@@ -134,10 +134,10 @@ function Schematic() {
             initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }}
           />
           <text x="34" y="128" fontFamily="JetBrains Mono" fontSize="9" fill="#bdbdbd">
-            on-device firmware
+            inference + edge runtime
           </text>
           <text x="34" y="141" fontFamily="JetBrains Mono" fontSize="8" fill="#7a7a7a">
-            wake word · power · always-on
+            on-device · low-latency · always-on
           </text>
         </g>
 

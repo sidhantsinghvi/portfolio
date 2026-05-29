@@ -11,8 +11,8 @@ export const META = {
 
 export const BIO_LINES = [
   "I'm a Computer Engineering student at UC San Diego.",
-  "I love solving hard real-time problems: messy sensor input on one end, a person who needs instant feedback on the other.",
-  "I like working across the whole product loop: the model, the pipeline that feeds it, and the UX the person actually touches. A latency win in inference and a latency win in the render are the same problem to me.",
+  "I build AI systems that have to work in the real world: voice, vision, live data. The interesting problems are at the boundary where the model meets the product.",
+  "I like working across the whole stack: the inference pipeline, the product layer on top, and the embedded systems underneath when the hardware matters.",
   "The throughline is shipping the whole thing, not owning one slice. I do my best work in environments where effort shows up directly in the product.",
 ];
 
@@ -43,20 +43,6 @@ export const EXPERIENCES = [
       "Integrated Taskyon into BRG's platform, enabling automated agent workflows and improving compute efficiency by 28% for renewable energy analysis.",
       "Moved simulation execution into the browser–solar/wind generation runs that previously required manual setup now run on demand.",
       "Implemented client-side state management to keep agent steps, sim outputs, and parcel-level forecasting UI in sync.",
-    ],
-  },
-  {
-    id: "e4e",
-    company: "Engineers for Exploration",
-    role: "Undergraduate Researcher, Firmware & Systems",
-    period: "Sep 2025–Present",
-    location: "San Diego",
-    summary:
-      "Field-deployed telemetry for wildlife tracking–low-power radio telemetry drones that wake up, read sensors, talk to a base station, and survive weeks in the field.",
-    bullets: [
-      "Built real-time sensor data pipelines: ingesting, filtering, and packaging telemetry for reliable wireless transmission.",
-      "Wrote control software with event-driven state machines handling sensor dropouts, reconnects, and edge-case recovery.",
-      "Optimized the software stack for always-on operation: duty cycling, buffering strategies, and low-overhead logging.",
     ],
   },
   {
@@ -112,7 +98,7 @@ export const PROJECTS = [
     github: "https://zaudit.co",
     span: "wide",
     body:
-      "AI accounting assistant built on MCP: natural-language queries for bookkeeping, model tools that automate data lookup and categorization, and backend pipelines that prepare, validate, and route financial data for reliable AI-assisted accounting.",
+      "Startup built to explore the Indian accounting and audit market. Accountants there still run most workflows in Tally — we built an AI assistant on top of it using MCP: natural-language queries for bookkeeping, model tools that automate data lookup and categorization, and pipelines that prepare and route financial data for AI-assisted audit workflows.",
     pipeline: ["User query", "MCP tool router", "Data pipeline", "AI response"],
     metrics: [
       { label: "Interface", value: "natural language" },
@@ -300,27 +286,27 @@ export const PROJECTS = [
 export const SKILLS = [
   {
     label: "AI / ML",
-    items: ["PyTorch", "ONNX", "OpenCV", "TensorFlow", "real-time inference", "edge ML", "agentic workflows"],
+    items: ["PyTorch", "ONNX", "OpenCV", "TensorFlow", "real-time inference", "edge ML", "agentic workflows", "MCP", "LLM pipelines"],
   },
   {
     label: "Real-time / systems",
     items: ["multithreading", "audio pipelines", "STT / VAD", "data pipelines", "OS concurrency", "Linux"],
   },
   {
-    label: "Languages",
-    items: ["Python", "C", "C++", "TypeScript", "Java", "Verilog", "CUDA"],
+    label: "Web / product",
+    items: ["React", "Next.js", "Tailwind", "Supabase", "Node.js"],
   },
   {
-    label: "Embedded",
-    items: ["UART", "SPI", "I2C", "GPIO", "RF modules", "microcontrollers", "power management"],
+    label: "Languages",
+    items: ["Python", "C", "C++", "TypeScript", "Java", "Verilog", "CUDA"],
   },
   {
     label: "Robotics",
     items: ["ROS2", "Jetson Nano", "OAK-D", "PID", "IMU integration", "GNSS / Kalman filter"],
   },
   {
-    label: "Web / product",
-    items: ["React", "Next.js", "Tailwind", "Supabase", "Node.js"],
+    label: "Embedded",
+    items: ["UART", "SPI", "I2C", "GPIO", "RF modules", "microcontrollers", "power management"],
   },
   {
     label: "Hardware",
